@@ -1,7 +1,14 @@
 from django.shortcuts import render
+from django.conf import settings
+from django.core.mail import send_mail
 
 # Create your views here.
 def index(request):
+    subject = 'welcome to GFG world'
+    message = 'Hi Rajwinder, thank you for registering in geeksforgeeks.'
+    email_from = settings.EMAIL_HOST_USER
+    recipient_list = ['iamkarantalwar@gmail.com' ]    
+    send_mail( subject, message, email_from, recipient_list ) 
     return render(request, 'index.html')
 
 def findcounsellor(request):
