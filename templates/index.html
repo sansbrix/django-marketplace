@@ -1,0 +1,58 @@
+{% extends 'base.html' %} {%load static %} {% block content %}
+<div class="container-fluid pb-5">
+  <div
+    class="d-flex flex-lg-row flex-sm-column flex-md-column justify-content-lg-between container"
+  >
+    <div class="align-self-lg-end order-1 ps-1 mb-2 mb-md-5">
+      <div class="main-text-div">
+        <h1 class="">
+          Connect with
+          <p class="green line-1 anim-typewriter d-inline-block">counsellors</p>
+          <br />
+          across the globe.
+        </h1>
+        <p class="para-1 py-2">
+          Get help in career mapping, college applications, test preperation and
+          much more!<br />
+          Get help around career mapping, collage admissions, interview, resume
+          and test preperation, personal branding and much more.
+        </p>
+      </div>
+      <a href="#" class="text-decoration-none">
+        <button class="find-counsellor me-3 border-0 shadow-lg" type="button">
+          Find a Counsellor
+        </button>
+      </a>
+      <a href="#" class="text-decoration-none">
+        <button class="get border-0 shadow-sm" type="button">
+          Get ametqui
+        </button>
+      </a>
+    </div>
+    <div class="order-2">
+      <img src="{% static 'images/main-image.png' %}" alt="" class="img" />
+      <!-- <p class="text-center comp text-uppercase">
+            AWS/Facebook/ibm/Microsoft
+            <img src="images/image (2).png" alt="" />
+          </p> -->
+    </div>
+  </div>
+</div>
+
+<script>
+  var text = ["college counsellors", "carrer counsellors"];
+  var counter = 0;
+  var elem = document.getElementById("changeText");
+  // elem.addClass('anim-typewriter');
+  var inst = setInterval(change, 1500);
+
+  function change() {
+    elem.innerHTML = text[counter];
+    counter++;
+    if (counter >= text.length) {
+      counter = 0;
+      // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+    }
+  }
+</script>
+{% endblock %}

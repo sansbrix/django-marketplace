@@ -1,0 +1,117 @@
+{% extends 'base.html' %} {%load static %} {% block content %}
+
+<!-- Main -->
+<div class="container-fluid pb-5">
+  <div
+    class="d-flex flex-lg-row flex-sm-column flex-md-column justify-content-lg-between mx-md-5 mt-3"
+  >
+    <div class="w-100">
+      <section class="">
+        <div class="">
+          <div class="card bg-transparent col-md-8 mt-5 border-0">
+            <div class="card-body text-primary-color">
+              <!-- style="background-color: transparent !important" -->
+              <h1 class="card-title mb-5">Sign up</h1>
+              <form action="" id="form">
+                <select name="method" class="form-select" id="select1">
+                  <option selected disabled>Choose verification mode</option>
+                  <option value="1" id="emailoption">Email</option>
+                  <option value="2" id="phnnooption">Phone number</option>
+                  <option value="3" id="googleoption">Google</option>
+                </select>
+                <br />
+                <div id="for_email">
+                  <label for="email">Enter email</label>
+                  <br />
+                  <input
+                    type="email"
+                    class="others form-control"
+                    name="email"
+                    id="email"
+                  />
+                  <br />
+                  <label for="code">Enter code</label>
+                  <br />
+                  <input
+                    type="email"
+                    class="others form-control"
+                    name="code"
+                    id="code"
+                  />
+                </div>
+                <div id="for_phnno">
+                  <label for="email">Enter Phone number</label>
+                  <br />
+                  <input
+                    type="number"
+                    class="others form-control"
+                    name="phoneno"
+                    id="phoneno"
+                  />
+                  <br />
+                  <label for="code">Enter OTP </label>
+                  <br />
+                  <input
+                    type="number"
+                    class="others form-control"
+                    name="otp_code"
+                    id="otp_code"
+                  />
+                </div>
+
+                <label for="select2" class="mt-4"
+                  >Which option best describes you?</label
+                >
+                <select name="method" class="form-select" id="select2">
+                  <option value="" selected disabled>Choose</option>
+                  <option value="1">Individual Counsellor</option>
+                  <option value="2">Counselling Firm</option>
+                </select>
+                <div class="text-end my-2">
+                  <a
+                    href="/sign-up1"
+                    class="text-decoration-none text-white btn btn-dark my-3 shadow-lg"
+                  >
+                    Next<i class="ps-2 fa-solid fa-angles-right"></i>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="order-2">
+      <img src="{% static 'images/main-image.png' %}" alt="" class="img" />
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $("#select1").on("change", function () {
+    var selection = $(this).val();
+    switch (selection) {
+      case "1":
+        $("#for_email").show();
+        $("#for_phnno").hide();
+        break;
+      default:
+        $("#for_email").hide();
+      case "2":
+        $("#for_phnno").show();
+        $("#for_email").hide();
+        break;
+      case "3":
+        $("#for_email").hide();
+        $("#for_phnno").hide();
+        break;
+    }
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    $("#form").validate();
+  });
+</script>
+{% endblock %}

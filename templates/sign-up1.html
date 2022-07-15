@@ -1,0 +1,84 @@
+{% extends 'base.html' %} {%load static %} {% block content %}
+
+<div class="container-fluid pb-5">
+  <div
+    class="d-flex flex-lg-row flex-sm-column flex-md-column justify-content-lg-between mx-md-5 mt-3"
+  >
+    <div class="w-100">
+      <section class="">
+        <div class="">
+          <div class="card bg-transparent col-md-8 mt-5 border-0">
+            <div
+              class="card-body text-primary-color"
+              style="background-color: transparent !important"
+            >
+              <h1 class="card-title mb-5">Sign up</h1>
+              <form action="">
+                <div class="form-group">
+                  <label for="Counsellor_name" class="text-capitalize"
+                    >Enter full name*</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="Counsellor_name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group my-3 py-2">
+                  <label for="profile" class="my-2"
+                    >Attach Headshot/Profile Picture/Logo</label
+                  ><br />
+                  <input type="file" name="profile" id="profile" class="" />
+                </div>
+                <div class="text-right">
+                  <a
+                    href="/sign-up1"
+                    class="text-decoration-none btn get p-1"
+                    id=""
+                  >
+                    Clear attachment
+                  </a>
+                </div>
+                <div class="text-end my-2">
+                  <a
+                    href="/sign-up"
+                    class="text-decoration-none text-white btn btn-dark my-3 shadow-lg"
+                  >
+                    <i class="pe-2 fa-solid fa-angles-left"></i>Back
+                  </a>
+                  <a
+                    href="/sign-up2"
+                    class="text-decoration-none text-white btn btn-dark my-3 shadow-lg"
+                  >
+                    Next<i class="ps-2 fa-solid fa-angles-right"></i>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="order-2">
+      <img src="{% static 'images/main-image.png' %}" alt="" class="img" />
+    </div>
+  </div>
+</div>
+
+<script>
+  let inputElement = document.getElementById("profile");
+  let a = document.getElementById("clearselect");
+
+  function showClear() {
+    a.style.display = "block";
+  }
+  inputElement.addEventListener("click", showClear);
+  function clearInputField() {
+    inputElement.value = "";
+    a.style.display = "none";
+  }
+
+  a.addEventListener("click", clearInputField);
+</script>
+{% endblock %}

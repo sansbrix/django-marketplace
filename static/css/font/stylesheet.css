@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-MediumItalic.eot');
+    src: local('Godfrey Medium Italic'), local('Godfrey-MediumItalic'),
+        url('Godfrey-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-MediumItalic.woff2') format('woff2'),
+        url('Godfrey-MediumItalic.woff') format('woff'),
+        url('Godfrey-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-LightItalic.eot');
+    src: local('Godfrey Light Italic'), local('Godfrey-LightItalic'),
+        url('Godfrey-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-LightItalic.woff2') format('woff2'),
+        url('Godfrey-LightItalic.woff') format('woff'),
+        url('Godfrey-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-Black.eot');
+    src: local('Godfrey Black'), local('Godfrey-Black'),
+        url('Godfrey-Black.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-Black.woff2') format('woff2'),
+        url('Godfrey-Black.woff') format('woff'),
+        url('Godfrey-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-Bold.eot');
+    src: local('Godfrey Bold'), local('Godfrey-Bold'),
+        url('Godfrey-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-Bold.woff2') format('woff2'),
+        url('Godfrey-Bold.woff') format('woff'),
+        url('Godfrey-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-ExtralightItalic.eot');
+    src: local('Godfrey Extralight Italic'), local('Godfrey-ExtralightItalic'),
+        url('Godfrey-ExtralightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-ExtralightItalic.woff2') format('woff2'),
+        url('Godfrey-ExtralightItalic.woff') format('woff'),
+        url('Godfrey-ExtralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-Light.eot');
+    src: local('Godfrey Light'), local('Godfrey-Light'),
+        url('Godfrey-Light.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-Light.woff2') format('woff2'),
+        url('Godfrey-Light.woff') format('woff'),
+        url('Godfrey-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-BoldItalic.eot');
+    src: local('Godfrey Bold Italic'), local('Godfrey-BoldItalic'),
+        url('Godfrey-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-BoldItalic.woff2') format('woff2'),
+        url('Godfrey-BoldItalic.woff') format('woff'),
+        url('Godfrey-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-BlackItalic.eot');
+    src: local('Godfrey Black Italic'), local('Godfrey-BlackItalic'),
+        url('Godfrey-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-BlackItalic.woff2') format('woff2'),
+        url('Godfrey-BlackItalic.woff') format('woff'),
+        url('Godfrey-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-Extralight.eot');
+    src: local('Godfrey Extralight'), local('Godfrey-Extralight'),
+        url('Godfrey-Extralight.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-Extralight.woff2') format('woff2'),
+        url('Godfrey-Extralight.woff') format('woff'),
+        url('Godfrey-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-Thin.eot');
+    src: local('Godfrey Thin'), local('Godfrey-Thin'),
+        url('Godfrey-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-Thin.woff2') format('woff2'),
+        url('Godfrey-Thin.woff') format('woff'),
+        url('Godfrey-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-RegularItalic.eot');
+    src: local('Godfrey Italic'), local('Godfrey-RegularItalic'),
+        url('Godfrey-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-RegularItalic.woff2') format('woff2'),
+        url('Godfrey-RegularItalic.woff') format('woff'),
+        url('Godfrey-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-Medium.eot');
+    src: local('Godfrey Medium'), local('Godfrey-Medium'),
+        url('Godfrey-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-Medium.woff2') format('woff2'),
+        url('Godfrey-Medium.woff') format('woff'),
+        url('Godfrey-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-Regular.eot');
+    src: local('Godfrey Regular'), local('Godfrey-Regular'),
+        url('Godfrey-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-Regular.woff2') format('woff2'),
+        url('Godfrey-Regular.woff') format('woff'),
+        url('Godfrey-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Godfrey';
+    src: url('Godfrey-ThinItalic.eot');
+    src: local('Godfrey Thin Italic'), local('Godfrey-ThinItalic'),
+        url('Godfrey-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Godfrey-ThinItalic.woff2') format('woff2'),
+        url('Godfrey-ThinItalic.woff') format('woff'),
+        url('Godfrey-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+

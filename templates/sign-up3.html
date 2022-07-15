@@ -1,0 +1,123 @@
+{% extends 'base.html' %} {%load static %} {% block content %}
+<!-- Main -->
+<div class="container-fluid pb-5">
+  <div
+    class="d-flex flex-lg-row flex-sm-column flex-md-column justify-content-lg-between mx-md-5 mt-3"
+  >
+    <div class="w-100">
+      <section class="">
+        <div class="">
+          <div class="card bg-transparent col-md-8 mt-5 border-0">
+            <div
+              class="card-body text-primary-color"
+              style="background-color: transparent !important"
+            >
+              <h1 class="card-title mb-5">Sign up</h1>
+              <form action="">
+                <div class="form-group">
+                  <div class="px-4 py-2">
+                    <label for="web_link"
+                      >Add Website Link (Visit Website)</label
+                    >
+                    <br />
+                    <input
+                      type="text"
+                      id="web-link"
+                      class="px-2 bg-transparent border-top-0 border-start-0 border-end-0 w-100 others"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="px-4 py-2">
+                      <label for="email">Contact Email</label>
+                      <br />
+                      <input
+                        type="email"
+                        id="email"
+                        class="px-2 bg-transparent border-top-0 border-start-0 border-end-0 w-100 others"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="px-4 py-2">
+                      <label for="phone_no">Phone Number</label>
+                      <br />
+                      <input
+                        type="number"
+                        id="phone_no"
+                        class="px-2 bg-transparent border-top-0 border-start-0 border-end-0 w-100 others"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="mx-4 my-2 fw-semibold"
+                      >Add Social Media Links</label
+                    >
+                    <div class="d-flex gap-3 px-5">
+                      <i
+                        class="fa-brands fa-instagram fa-2x"
+                        id="socail_icon_insta"
+                      ></i>
+                      <i
+                        class="fa-brands fa-linkedin fa-2x"
+                        id="socail_icon_in"
+                      ></i>
+                      <i
+                        class="fa-brands fa-youtube fa-2x"
+                        id="socail_icon_youtube"
+                      ></i>
+                      <i
+                        class="fa-brands fa-facebook-square fa-2x"
+                        id="socail_icon_facebook"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="px-4 py-2">
+                      <label class="fw-semibold"
+                        >Attach Pictures of Center/Institute/Office (View
+                        Pictures)</label
+                      >
+                      <br />
+                      <input
+                        type="file"
+                        name="pictures"
+                        class="my-3 d-inline-block"
+                        id="pictures"
+                      />
+                      <button
+                        href=""
+                        class="text-decoration-none btn btn-secondary p-1"
+                        id="removepictures"
+                      >
+                        Clear attachment
+                      </button>
+                    </div>
+                  </div>
+                  <div class="text-end my-2 mx-3">
+                    <a
+                      href="/sign-up2"
+                      class="text-decoration-none text-white border-2 btn btn-dark my-3 shadow-lg"
+                    >
+                      <i class="pe-2 fa-solid fa-angles-left"></i>Back
+                    </a>
+                    <button
+                      type="submit"
+                      class="btn border-2 text-white btn btn-dark my-3 shadow-lg"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="order-2">
+      <img src="{% static 'images/main-image.png' %}" alt="" class="img" />
+    </div>
+  </div>
+</div>
+
+{% endblock %}
